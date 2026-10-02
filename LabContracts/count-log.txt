@@ -1,0 +1,5 @@
+LOG OPENED
+  1  FROZEN #2    30.00
+  2  DAIRY  #3    21.50
+  3  DRY    #1    19.00
+LOG CLOSED, 3 lines written
