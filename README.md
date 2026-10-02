@@ -1,0 +1,7 @@
+CSCI 1260-002 Lab 2 - Mary Pendleton
+My chosen track was Track A: The Shop
+To run this program, you open Lab3.slnx in Visual Studio Community. You then select Start Without Debugging (or any other start) to run the program!
+Design Question 1 - PhysicalGood cannot provide a category or handling fee because those depend on the type of physical good. If it is abstract, the inventory records will not be general or incomplete. If it were concrete, someone would probably create an object without meaningful answers.
+Design Question 2 - The hollow diamond between Shop and StockItem is because Program creates the items and then gives them to Shop. The items exist without the Shop. StockItem has a filled diamond with StockMovement because StockItem creates and owns the movements. The movements only exists as part of the Stock item's history. If Add took the item info and built the item inside of Shop, the diamond would be filled because Shop would create and own the items. Shop would need to then know how to create every type of item.
+Design Question 3 - You must create a new class file called RentalGood.cs. It would inherit from the items in PhysicalGood and it would also implement IDiscountable to go on sale. Shop.cs would not need to be changed because it already works with any stock item and checks IDiscountable if needed. If IsOnSale were part of StockItem, classes like DurableGood would be forced to have sale behavior even though they do not need it. The interface lets only the classes that can be discounted include that behavior. 
+Nothing is unfinished!
